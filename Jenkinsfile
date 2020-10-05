@@ -14,6 +14,7 @@ node {
     sh 'mvn sonar:sonar -Dmaven.test.failure.ignore=true -DskipTests=true -Dsonar.sources=src/main/java'
    }
 
+  
    stage ('Banking_NexusUpload') {
    
           sh "mvn -B help:evaluate -Dexpression=project.groupId | grep -e '^[^[]' > groupIdFile"
