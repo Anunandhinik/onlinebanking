@@ -39,5 +39,5 @@ node {
   
    stage ('Banking_tomcatDeployment') {
     sh 'mvn -P tomcatDeployment tomcat7:redeploy -DskipTests'
-   }    
+   }
 }    
