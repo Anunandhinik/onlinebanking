@@ -1,7 +1,7 @@
 env.dockerimagename="devopsbasservice/buildonframework:buildon-v1.0"
 node {
   stage ('Banking_Checkout') {
-   //If some other Repository is to be given apart from current repo, provide git URL as below.
+   //If some test other Repository is to be given apart from current repo, provide git URL as below.
     checkout scm
   }
    stage ('Banking_Build') {
